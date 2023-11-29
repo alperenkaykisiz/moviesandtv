@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            font-weight: bold;
+            color: brown;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+        } 
+        /* Birinci satır için geçerli */
+
+        p.abaout::first-line {
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 48px;
+        }
+
+        ::selection {
+            background-color: hotpink;
+        }
+
+        p::after {
+            content: '\261D';
+            font-size: 35px;
+            padding: 10px;
+        }
+        /* Before olursa paragrafın ilk başına bir emoji ekler after olursa sonuna ekler */
+    </style>
+</head>
+<body>
+
+    <!-- Pseudo classes -->
+
+    <!-- Pseudo elements -->
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis exercitationem ex sunt sequi facere dolorum, corrupti atque in dolore expedita deleniti vel, ipsam necessitatibus at similique porro eveniet eligendi labore.
+    </p>
+    
+    <p class="abaout">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda optio mollitia nihil exercitationem ea deserunt nostrum velit, quae officiis repudiandae reiciendis pariatur sint quas asperiores voluptatum praesentium debitis! Facere?
+    </p>
+
+</body>
+</html>
